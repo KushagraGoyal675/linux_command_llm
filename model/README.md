@@ -14,21 +14,36 @@ should probably proofread and complete it, then remove this comment. -->
 
 # fine_tuned_model
 
-This model is a fine-tuned version of [openlm-research/open_llama_3b_v2](https://huggingface.co/openlm-research/open_llama_3b_v2) on an unknown dataset.
+This model is a fine-tuned version of [openlm-research/open_llama_3b_v2](https://huggingface.co/openlm-research/open_llama_3b_v2) on kushagragoyal/inputlinuxcommands.
 
 ## Model description
 
-More information needed
+Overview
+Linux Command LLM is a fine-tuned language model based on open_llama_3b_v2, specifically optimized to interpret natural language inputs and generate accurate Linux shell commands. This model enables users to execute system operations efficiently by describing tasks in plain English, which are then converted into executable Linux commands.
+
+Base Model
+Model Name: open_llama_3b_v2
+Parameter Size: 3 billion (3B)
+Architecture: Transformer-based causal language model
+Source: Open-source LLaMA variant
+Fine-Tuning Details
+Dataset: The model has been fine-tuned on a custom dataset comprising Linux command-line instructions, shell scripting commands, and common system administration tasks.
+Training Objective: The model has been trained using supervised fine-tuning on prompt-response pairs where natural language instructions are mapped to correct Linux commands.
+Optimization: The training process includes instruction tuning, context awareness, and command safety measures to minimize incorrect or harmful outputs.
 
 ## Intended uses & limitations
+Intended Use Cases
+🔹 System Administrators: Automates common system tasks.
+🔹 Developers: Helps execute development-related commands.
+🔹 Beginners: Provides a friendly way to learn Linux commands through natural language input.
+🔹 AI-Powered OS Integration: Can be integrated into an OS with an LLM-based kernel for voice-assisted or chat-based command execution.
 
-More information needed
+Limitations
+⚠️ May require verification: Users should verify generated commands before execution.
+⚠️ Does not support real-time system feedback: The model only generates commands and does not execute them.
+⚠️ Limited to known datasets: Commands outside the training data might be incorrect or missing.
 
-## Training and evaluation data
 
-More information needed
-
-## Training procedure
 
 ### Training hyperparameters
 
